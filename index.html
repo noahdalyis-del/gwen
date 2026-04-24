@@ -11,36 +11,36 @@ body {
   background: white;
 }
 
-/* container holds everything */
+/* container for positioning */
 .container {
   position: relative;
-  width: 60vw;
-  max-width: 400px;
+  width: 320px;
 }
 
 /* main image */
 .main {
   width: 100%;
   display: block;
-  z-index: 3;
   position: relative;
+  z-index: 2;
 }
 
-/* TOP text (slightly above + left of main) */
+/* "Bitchin" (top, slightly left + tilted) */
 .top {
   position: absolute;
-  top: -60px;
+  top: -80px;
   left: -40px;
-  width: 120%;
+  width: 140%;
+  transform: rotate(-10deg);
   z-index: 1;
 }
 
-/* HEARTS (bottom right of main, tighter + smaller) */
+/* hearts (bottom right, small + tight) */
 .bottom {
   position: absolute;
-  bottom: -40px;
-  right: -20px;
-  width: 35%;
+  bottom: -30px;
+  right: -30px;
+  width: 120px;
   z-index: 1;
 }
 </style>
