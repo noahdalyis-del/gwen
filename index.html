@@ -1,51 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    body {
-      margin: 0;
-      background: white;
-      height: 100vh;
-      position: relative;
-      overflow: hidden;
-    }
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
 
-    .top-img {
-      position: absolute;
-      top: 10%;
-      left: -8%;
-      width: 95%;
-      height: auto;
-      z-index: 1;
-    }
+/* TOP "Bitchin" */
+.top {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 140%;
+  z-index: 1;
+}
 
-    .main-img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 50%;
-      height: auto;
-      z-index: 3;
-    }
+/* MAIN GIRAFFE */
+.main {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  z-index: 3;
+}
 
-    .bottom-img {
-      position: absolute;
-      bottom: 2%;
-      left: -5%;
-      width: 110%;
-      height: auto;
-      z-index: 1;
-    }
-  </style>
+/* BOTTOM HEARTS */
+.bottom {
+  position: absolute;
+  bottom: -5%;
+  right: -10%;
+  width: 90%;
+  z-index: 1;
+}
+</style>
 </head>
+
 <body>
 
-  <img src="IMG_5064.jpeg" class="top-img">
-
-  <img src="IMG_5029.png" class="main-img">
-
-  <img src="IMG_5065.jpeg" class="bottom-img">
+<img src="IMG_5064.jpeg" class="top">
+<img src="IMG_5029.png" class="main">
+<img src="IMG_5065.jpeg" class="bottom">
 
 </body>
 </html>
