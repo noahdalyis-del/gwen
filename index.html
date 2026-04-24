@@ -5,35 +5,42 @@
 body {
   margin: 0;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: white;
+}
+
+/* container holds everything */
+.container {
+  position: relative;
+  width: 60vw;
+  max-width: 400px;
+}
+
+/* main image */
+.main {
+  width: 100%;
+  display: block;
+  z-index: 3;
   position: relative;
 }
 
-/* TOP TEXT IMAGE */
+/* TOP text (slightly above + left of main) */
 .top {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 70%;
+  top: -60px;
+  left: -40px;
+  width: 120%;
   z-index: 1;
 }
 
-/* MAIN GIRAFFE */
-.main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 45%;
-  z-index: 3;
-}
-
-/* HEARTS */
+/* HEARTS (bottom right of main, tighter + smaller) */
 .bottom {
   position: absolute;
-  bottom: 5%;
-  right: 5%;
-  width: 22%;
+  bottom: -40px;
+  right: -20px;
+  width: 35%;
   z-index: 1;
 }
 </style>
@@ -41,9 +48,11 @@ body {
 
 <body>
 
-<img src="IMG_5064.jpeg" class="top">
-<img src="IMG_5065.jpeg" class="bottom">
-<img src="IMG_5029.png" class="main">
+<div class="container">
+  <img src="IMG_5064.jpeg" class="top">
+  <img src="IMG_5029.png" class="main">
+  <img src="IMG_5065.jpeg" class="bottom">
+</div>
 
 </body>
 </html>
