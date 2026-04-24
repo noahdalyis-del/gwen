@@ -5,38 +5,50 @@
     body {
       margin: 0;
       background: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
     }
 
+    /* TOP IMAGE */
     .top-img {
-      width: 90%;
-      height: auto;
-      margin-top: 20px;
-      margin-bottom: 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 35vh;
+      object-fit: cover;
+      z-index: 1;
     }
 
-    .main-img {
-      width: 60%;
-      height: auto;
-      margin-bottom: 30px;
-    }
-
+    /* BOTTOM IMAGE */
     .bottom-img {
-      width: 90%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 35vh;
+      object-fit: cover;
+      z-index: 1;
+    }
+
+    /* MAIN IMAGE (on top) */
+    .main-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 45%;
       height: auto;
-      margin-bottom: 20px;
+      z-index: 2;
     }
   </style>
 </head>
 <body>
 
   <img src="IMG_5064.jpeg" class="top-img">
-
-  <img src="IMG_5029.png" class="main-img">
-
   <img src="IMG_5065.jpeg" class="bottom-img">
+  <img src="IMG_5029.png" class="main-img">
 
 </body>
 </html>
